@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex justify-between px-8 py-4 shadow-lg scroll-p-2 bg-#fffdd0">
+        <a class="py-4" href="crypto.html"><img src="./coindcx-logo-crypto.svg" alt="Logo" style="cursor: pointer;"></a>
+        <div class=" space-x-4 font-sans text-white">
+           <button class="bg-blue-500 px-3 py-2 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 text-base font-medium">Create Account</button>
+           <button class="bg-red-600 px-3 py-2 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 text-base font-medium ">Log in</button>
+        </div>
+       </header>
+       <form class="flex justify-center mt-20">
+        <input type="text" placeholder="Search cryptocurrencies" style="border: 1px solid black; padding: 4px; border-radius: 8px; margin-right: 5px;">
+        <button class="bg-blue-500 px-3 py-2 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 text-base font-medium">Search</button>
+       </form>
+       <div id="search-result"></div>
+       <footer class="flex bg-white border-y-2 p-2 justify-between mt-96">
+        <p>&copy;CryptoView  | Developed by Hitesh Jangid</p>
+        <P><a href="https://github.com/j-hitesh"><i class="fa-brands fa-github"></i></a></P>
+    </footer>
+    <script src="https://kit.fontawesome.com/5bd5ea8d45.js" crossorigin="anonymous"></script>
+    <script src="crypto-search.js"></script>
+</body>
+</html>

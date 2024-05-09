@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Search Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .crypto{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+
+    .crypto::-webkit-scrollbar{
+        display: none;
+    }
+</style>
+<body class="font-sans">
+    <header class="flex justify-between px-8 py-4 shadow-lg scroll-p-2 bg-#fffdd0">
+     <img src="./coindcx-logo-crypto.svg" alt="Logo" style="cursor: pointer;">
+     <div class=" space-x-4 font-sans text-white">
+        <a href="serch.html"><button class="bg-blue-500 px-3 py-2 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 text-base font-medium" >Search</button></a>
+        <button class="bg-blue-500 px-3 py-2 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 text-base font-medium">Create Account</button>
+        <button class="bg-red-600 px-3 py-2 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 text-base font-medium ">Log in</button>
+     </div>
+    </header>
+    <section class="flex justify-between mt-20 px-8 ">
+        <div class="mt-40 space-y-2">
+            <h1 class="font-bold text-2xl">CryptoView</h1>
+            <p class="text-base fint-normal">A platform to view information about all cryptocurrencies live. </p>
+        </div>
+        <div>
+            <img src="./main_image.svg.png" alt="site img" style="width: 80%; cursor: pointer;">
+        </div>
+    </section>
+    <section class="mb-20 ">
+        <h1 class="text-center text-4xl font-bold animate-bounce text-cyan-400 drop-shadow-md">Top-Tranding</h1>
+        <div class="crypto" id="crypto"></div>
+    </section>
+    <footer class="flex bg-white border-y-2 p-2 justify-between">
+        <p>&copy;CryptoView  | Developed by Hitesh Jangid</p>
+        <P><a href="https://github.com/j-hitesh"><i class="fa-brands fa-github"></i></a></P>
+    </footer>
+    <script src="https://kit.fontawesome.com/5bd5ea8d45.js" crossorigin="anonymous"></script>
+    <script src="crypto.js"></script>
+</body>
+</html>
